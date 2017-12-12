@@ -1,0 +1,35 @@
+12.12.2017 - 0.0.10
+- Caso KeyboardProcessor não tenha nenhuma evento para processar esperar 1ms.
+	- Isso é o suficiente para evitar o alto consumo da CPU.
+
+29.10.2017 - 0.0.9
+- Novas constantes VK_MIN e VK_MAX e um novo método isKeyCode(), EnumVK.
+
+12.07.2016 - 0.0.8
+- KeyboardProcessor não sincronizava o buffer corretamente de forma que nunca podia usá-lo.
+
+12.07.2016 - 0.0.7
+- Pequena correção ortográfica na documentação do projeto.
+
+17.08.2015 - 0.0.6
+- KeyboardPicker e KeyboardProcessor não estava funcionando por causa de dead lock.
+- Atualizando o caminho dos procedimentos nativos para register e unregister, teclado.
+
+22.07.2015 - 0.0.5
+- Base do projeto JNI Input adicionado na linguagem Java.
+- Estrutura básica para eventos que podem ser criados na biblioteca, InputEvent.
+- Utilitário para facilitar a criação de serviços de entrada, ActionEvent.
+- Enumeração das teclas virtuais, na biblioteca e dos caracteres.
+
+22.07.2015 - 0.0.4
+- Utilização de macro para a despachar eventos de teclado.
+- Adicionado desencadeamento para os eventos de tecla digitada, KEY_TYPED.
+- Apenas teclas digitadas terão um char anexado ao seu evento, caso contrário CH_NULL.
+- Enumeração de KeyType movido de Core.h para KeyEvent.h onde deve estar de fato.
+
+22.07.2015 - 0.0.3
+- Bloqueando determinadas extensões de arquivos, gerados durante a compilação.
+
+22.07.2015 - 0.0.2
+- Enviando a base dos projetos em C++ (native) e Java (java).
+- Projeto native já funcionando para gerar a DLL, reconhece o teclado no computador.
